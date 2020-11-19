@@ -1,0 +1,26 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex-grow: 1;
+}
+
+
+.top-container{
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
