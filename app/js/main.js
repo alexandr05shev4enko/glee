@@ -2,7 +2,8 @@ $(function(){
   
   $('.slider__inner').slick({
     dots: true,
-    arrows: false
+    arrows: false,
+    autoplay: true
   });
 
   var mixer = mixitup('.products__items',{
