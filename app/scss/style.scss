@@ -319,6 +319,7 @@
 
 .products{
   padding-top: 70px;
+  padding-bottom: 90px;
   &__items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -334,6 +335,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
   }
   &__descr,
   &__price{
@@ -358,7 +360,8 @@
     top: 51%;
     display: flex;
     justify-content: space-between;
-    visibility: hidden;
+    transform: translateY(500%);
+    transition: all .3s;
   }
   &__tip{
     background-color: #fefefe;
@@ -367,6 +370,7 @@
     width: 45px;
     height: 45px;
     cursor: pointer;
+    transition: all .3s;
     svg{
       transform: translate(12px, 14px);
     }
@@ -380,8 +384,8 @@
 }
 
 .products__item:hover{
-  .products__tip{
-    visibility: visible;
+  .products__tips{
+    transform: translateY(0);
   }
 }
 
@@ -411,6 +415,59 @@ ul.products__filter{
   color: $title-color;
   text-align: center;
 }
+
+.features-product{
+  padding-top: 90px;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 870px;
+    width: 100%;
+    height: 390px;
+    padding: 90px 135px 120px 390px;
+    background-color: #feefe2;
+    position: relative;
+  }
+  &__item + .features-product__item{
+    margin-left: 30px;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 26px;
+    line-height: 32px;
+    color: $slider-color;
+    margin-bottom: 30px;
+  }
+  &__item-descr{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $slider-color;
+    margin-bottom: 48px;
+  }
+  &__item-link{
+    @extend %rubik-500;
+    color: $header-color;
+    font-size: 15px;
+    padding: 23px 85px 23px 20px;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: url('../images/icons/arrow-right2.svg');
+      right: 20px;
+    }
+  }
+  &__item-img{
+    position: absolute;
+    left: 110px;
+    top: -95px;
+  }
+}
+
 
 
 
