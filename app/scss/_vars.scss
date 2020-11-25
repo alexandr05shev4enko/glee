@@ -4,6 +4,7 @@ $slider-color: #243f4d;
 $delicatePink-color: #fef7f0;
 $title-color: #191919;
 $filter-color: #8b8b8b;
+$blog-color: #262626;
 
 
 
@@ -32,4 +33,17 @@ $filter-color: #8b8b8b;
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%title{
+  font-size: 36px;
+  color: #191919;
+  text-align: center;
+}
+
+@function max($numbers...){
+  @return m#{a}x(#{$numbers...});
+}
+@function min($numbers...){
+  @return m#{i}n(#{$numbers...});
 }

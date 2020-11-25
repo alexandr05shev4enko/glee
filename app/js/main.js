@@ -12,5 +12,10 @@ $(function(){
       control: '.products__filter-btn'
     }
   });
+  var mixer2 = mixitup('.category__items',{
+    selectors: {
+      control: '.category__filter-btn'
+    }
+  });
 
 });
