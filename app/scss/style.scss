@@ -619,6 +619,137 @@ ul.filter{
   }
 }
 
+.top{
+  padding: 30px 0;
+  background-color: #edf1f4;
+  text-align: center;
+  &__title{
+    @extend %rubik-300;
+    font-size: 36px;
+    color: #222933;
+    margin-bottom: 10px;
+  }
+}
+
+.modal{
+  padding-top: 105px;
+  padding-bottom: 140px;
+  &__form{
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  &__label {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    height: 60px;
+    padding: 7px 5px;
+    border: 1px solid #f6f6f6;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 18px;
+    @extend %rubik-500;
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+    margin: 36px 0 30px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link{
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__checkbox{
+
+  }
+}
+
+.register {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #f6f6f6;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  }
+  .register__text {
+    margin-bottom: 45px;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  .register__link {
+    @extend %rubik-500;
+    color: $slider-color;
+    padding: 20px 155px;
+    border: 1px solid #a3bbc8;
+  }
+
+  .partners{
+    height: 250px;
+    background-color: $delicatePink-color;
+    padding: 75px 0;
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .terms{
+    color: $slider-color;
+    padding-top: 115px;
+    &__inner{
+      max-width: 1200px;
+      margin: 0 auto;
+      .terms__list{
+        margin-left: 7px;
+        margin-bottom: 50px;
+      }
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 40px;
+      @extend %rubik-500;
+      margin-bottom: 17px;
+    }
+    &__list{
+      counter-reset: number;
+      
+    }
+    &__item{
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      &::before{
+        counter-increment: number;
+        content: "0" counter(number) ". ";
+      }
+      &:nth-child(n+10){
+        &::before{
+          content: counter(number) ". ";
+        }
+      }
+    }
+    &__text{
+      margin-bottom: 60px;
+    }
+  }
 
 
 

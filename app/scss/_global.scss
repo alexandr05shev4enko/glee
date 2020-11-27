@@ -24,3 +24,34 @@ main{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__items{
+    display: flex;
+  }
+  &__item{
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9ea2;
+    padding-right: 20px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "/";
+      top: 1px;
+      right: 7px;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}
