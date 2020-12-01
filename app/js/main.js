@@ -1,4 +1,6 @@
 $(function(){
+
+  $('.filter-price__input').ionRangeSlider();
   
   $('.slider__inner').slick({
     dots: true,
@@ -18,4 +20,5 @@ $(function(){
     }
   });
 
+  
 });

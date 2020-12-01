@@ -55,3 +55,23 @@ main{
     color: inherit;
   }
 }
+
+.shop-filter__title{
+  display: inline-block;
+  @extend %dmsans-700;
+  font-size: 18px;
+  color: $slider-color;
+  position: relative;
+  padding-right: 55px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  &::after{
+    position: absolute;
+    content: "";
+    background-color: #a3bbc8;
+    width: 38px;
+    height: 1px;
+    right: 0;
+    top: 13px;
+  }
+}
