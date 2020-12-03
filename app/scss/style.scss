@@ -967,7 +967,10 @@ ul.filter{
 
   .shop{
     padding: 120px 0;
-    
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .shop-filter{
@@ -1014,7 +1017,49 @@ ul.filter{
 
   .filter-price{
     margin-bottom: 70px;
+    &__span{
+      color: $slider-color;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    &__span-box:nth-child(2){
+      margin-right: 8px;
+    }
   }
+
+  .irs-min,
+  .irs-max,
+  .irs-from,
+  .irs-to{
+    display: none;
+  }
+
+  
+  .irs--flat .irs-line{
+    height: 1px;
+    max-width: 270px;
+    width: 100%;
+    background-color: #c2d2db;
+  }
+  .irs--flat .irs-bar{
+    height: 2px;
+    background-color: #a3bbc8;
+  }
+  .irs--flat .irs-handle>i:first-child{
+    width: 15px !important;
+    height: 15px !important;
+    margin-top: -4px;
+    background-color: #a3bbc8;
+  }
+
+  .irs--flat .irs-handle .to,
+  .irs--flat .irs-handle .from{
+    &:hover{
+      background-color: #a3bbc8;
+    }
+  }
+  
 
   .filter-brand{
     margin-bottom: 55px;
@@ -1055,6 +1100,163 @@ ul.filter{
     }
     
   }  
+
+  .recent{
+    &__items{
+      max-width: 180px;
+      width: 100%;
+    }
+    &__item{
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__img{
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f2f2f2;
+    }
+    &__item-inner{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__item-title{
+      @extend %rubik-400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #333333;
+    }
+    &__item-price{
+      @extend %rubik-400;
+      font-size: 15px;
+      line-height: 27px;
+      color: #333333;
+    }
+  }
+
+  .jq-ry-container{
+    padding: 0;
+  }
+  .jq-ry-group{
+    svg{
+      margin-right: 6px;
+    }
+  }
+
+  .chair{
+    padding: 30px 61px 35px 60px;
+    &-2{
+      padding: 30px 65px 35px 65px;
+    }
+  }
+  
+  .shop-content{
+    max-width: 870px;
+    &__items{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 75px;
+      
+    }
+    &__item{
+      max-width: 270px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+    }
+  }
+
+  .shop-big{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    &__item{
+      display: flex;
+      height: 500px;
+      margin-bottom: 40px;
+    }
+    &__img{
+      max-width: 370px;
+      padding: 75px 23px 70px;
+      border: 1px solid #f2f2f2;
+    }
+    &__item-content{
+      max-width: 470px;
+      margin-left: 30px;
+      padding: 75px 25px 70px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title{
+      @extend %rubik-400;
+      font-size: 40px;
+      color: #333333;
+    }
+    .star1{
+      margin-bottom: 20px;
+    }
+    &__price{
+      @extend %rubik-400;
+      font-size: 30px;
+      color: #333333;
+    }
+    &__descr{
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $slider-color;
+    }
+    &__buttons{
+      display: flex;
+      justify-content: space-between;
+      max-width: 111px;
+    }
+    // &__cart--big{
+    //   display: none;
+    // }
+    // &__cart-link--big{
+    //   @extend %rubik-400;
+    //   font-size: 15px;
+    //   line-height: 30px;
+    //   color: #fff;
+    //   padding: 13px 50px;
+    //   background-color: #a3bbc8;
+    //   border-radius: 5px;
+    // }
+    &__cart,
+    &__heart{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 15px 13px;
+      background-color: #fff;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      &:hover{
+        path{
+          fill: #fff;
+        }
+        background-color: #a3bac7;
+      }
+    }
+    
+  }
+  // .shop-big__cart:hover{
+  //   display: none;
+  //   .shop-big__buttons{
+  //     max-width: 275px;
+  //   }
+  //   .shop-big__cart--big{
+  //     display: block;
+  //   }
+  // }
+
+  
+
   
   
 

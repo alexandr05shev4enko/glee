@@ -75,3 +75,42 @@ main{
     top: 13px;
   }
 }
+
+.pagination{
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateX(55%);
+  &-list2{
+    transform: translateX(-50%);
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item a,
+  &__next{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $slider-color;
+    padding: 15px 20px;
+    border: 1px solid #a3bbc8;
+  }
+  &__next{
+    line-height: 20px;
+    margin-left: 15px;
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__item{
+    .pagination__link--active{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+}
