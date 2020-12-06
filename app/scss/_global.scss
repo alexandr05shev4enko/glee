@@ -20,7 +20,7 @@ main{
 }
 
 .container{
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -83,7 +83,7 @@ main{
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  transform: translateX(55%);
+  transform: translateX(3%);
   &-list2{
     transform: translateX(-50%);
   }
@@ -91,7 +91,7 @@ main{
     display: flex;
     justify-content: space-between;
   }
-  &__item a,
+  &__item .pagination__link,
   &__next{
     @extend %rubik-400;
     font-size: 16px;
